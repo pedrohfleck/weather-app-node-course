@@ -18,9 +18,9 @@ const forecast = (lat, long, callback) => {
         forecast:
           body.currently.summary +
           ". " +
-          body.daily[0].temperatureHigh +
+          body.daily.data[0].temperatureHigh +
           "-" +
-          body.daily[0].temperatureHigh +
+          body.daily.data[0].temperatureLow +
           ". It is " +
           body.currently.temperature +
           " degress celcius outside. There is a " +
